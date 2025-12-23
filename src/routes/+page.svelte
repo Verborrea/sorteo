@@ -46,7 +46,7 @@
 </script>
 
 <audio bind:this={audioPlayer} src="/navidad.mp3" loop></audio>
-<main class="overflow-hidden flex flex-col items-center justify-center text-center min-h-screen">
+<main class="overflow-hidden relative flex flex-col items-center justify-center text-center min-h-dvh">
 	<img src="/daza.avif" alt="Daza" class="inset-0 absolute w-full h-full object-cover z-0 brightness-75"/>
 	{#if musicaIniciada}
 	<img transition:scale={{ opacity: 0, duration: 2000, delay:0 }} src="/santi.avif" alt="Santiago" class="inset-0 absolute w-full h-full object-cover z-0"/>
