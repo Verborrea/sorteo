@@ -5,13 +5,12 @@
 	"assets": {
 		"directory": ".svelte-kit/cloudflare/assets",
 		"binding": "ASSETS"
-	}
-	// "d1_databases": [
-	// 	{
-	// 		"binding": "wasiyadb",
-	// 		"database_name": "wasiyadb",
-	// 		"database_id": "1dc60e21-9e5f-423d-8632-67c0a27cb0d3",
-	// 		"remote": true
-	// 	}
-	// ]
+	},
+	"d1_databases": [
+		{
+			"binding": "sorteo_db",
+			"database_name": "sorteo-db",
+			"database_id": "1c508c91-738c-4626-9f0b-066735da0eab"
+		}
+	]
 }

@@ -6,8 +6,14 @@ declare global {
 		// interface Locals {}
 		// interface PageData {}
 		// interface PageState {}
-		// interface Platform {}
+		interface Platform {
+			env: {
+				sorteo_db: D1Database;
+			};
+			context: ExecutionContext;
+			caches: CacheStorage & { default: Cache };
+		}
 	}
 }
 
-export {};
+export { };

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+	:root {
+		background: #0a2e1a;
+		color: white;
+	}
+}
+
+@layer components {
+	.animate-reveal {
+    animation: spin360 2s cubic-bezier(0, 0, 0.2, 0.9) both 1s;
+    backface-visibility: hidden;
+  }
+}
+
+@keyframes fall {
+	0% {
+		transform: translateY(-5vh) translateX(0);
+	}
+	25% {
+		transform: translateY(25vh) translateX(15px);
+	}
+	50% {
+		transform: translateY(50vh) translateX(-15px);
+	}
+	75% {
+		transform: translateY(75vh) translateX(15px);
+	}
+	100% {
+		transform: translateY(105vh) translateX(0);
+	}
+}
+
+@keyframes spin360 {
+    from {
+      transform: rotateZ(0deg) scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: rotateZ(720deg) scale(1);
+      opacity: 1;
+    }
+  }
+
